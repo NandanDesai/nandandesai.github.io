@@ -6,119 +6,360 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet"
+  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif
+  }
 </style>
+<style type="text/css">
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+    width: 50%;
+    margin: 100px auto;
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+</style>
+
 <body class="w3-white">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="./res/pic.jpeg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-white">
-            <h2>Nandan Desai</h2>
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+      <!-- Left Column -->
+      <div class="w3-third">
+
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="./res/my-photo.png" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-white">
+              <h2>Nandan Desai</h2>
+            </div>
           </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-grey"></i>India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i>nkdesai409@gmail.com</p>
-          
-          <hr>
+          <div class="w3-container">
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-grey"></i>India</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i>nkdesai409@gmail.com</p>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-grey"></i>Programming Languages</b></p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-java-plain colored"></i></span>&nbsp;&nbsp;Java</p>
-         
-          <p><span class="w3-xxlarge"><i class="devicon-c-plain colored"></i></span>&nbsp;&nbsp;C</p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-php-plain colored"></i></span>&nbsp;&nbsp;PHP</p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-javascript-plain colored"></i></span>&nbsp;&nbsp;JavaScript</p>
-          
-          <br>
-		<hr>
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-grey"></i>Tools</b></p>
-          <p><span class="w3-xxlarge"><i class="devicon-git-plain colored"></i></span>&nbsp;&nbsp;Git</p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-mysql-plain colored"></i></span>&nbsp;&nbsp;RDMBS (MySQL, SQLite etc.)</p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-docker-plain colored"></i></span>&nbsp;&nbsp;Docker</p>
-          
-          <p><span class="w3-xxlarge"><i class="devicon-linux-plain colored"></i></span>&nbsp;&nbsp;Linux</p>
-          <div class="w3-small">
-            I use Debian as my primary operating system.
+            <hr>
+
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming
+                Languages</b></p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-java-plain colored"></i></span>&nbsp;&nbsp;Java</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-c-plain colored"></i></span>&nbsp;&nbsp;C</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-php-plain colored"></i></span>&nbsp;&nbsp;PHP</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-javascript-plain colored"></i></span>&nbsp;&nbsp;JavaScript
+            </p>
+
+            <br>
+            <hr>
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Tools</b></p>
+            <p><span class="w3-xxlarge"><i class="devicon-git-plain colored"></i></span>&nbsp;&nbsp;Git</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-mysql-plain colored"></i></span>&nbsp;&nbsp;RDMBS (MySQL,
+              SQLite etc.)</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-docker-plain colored"></i></span>&nbsp;&nbsp;Docker</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-linux-plain colored"></i></span>&nbsp;&nbsp;Linux</p>
+            <div class="w3-small">
+              I use Debian as my primary operating system.
+            </div>
+            <br>
+          </div>
+
+        </div><br>
+        <!-- End Left Column -->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-user-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
+          <div class="w3-container w3-text-grey">
+            I'm a software developer and aspiring to become a computer security professional. I like talking and reading
+            about Privacy in the
+            digital world. I try to use free and open source software as much as possible and encourage people around me
+            to do so. I also write articles about my understanding of this software world. I'm also interested in
+            Indian politics, International news, Geopolitics, History etc.<br><br>Check out my blog
+            <span class="w3-text-teal"><a href="https://readbit.blogspot.com/">here</a></span>.
           </div>
           <br>
         </div>
-        
-      </div><br>
-    <!-- End Left Column -->
-    </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-o fa-fw w3-margin-right w3-xxlarge w3-text-grey"></i>My Interests</h2>
-        <div class="w3-container">
-          I am very passionate about software development. I respect and try to promote the ideologies of Free Software ("Free" in the sense of freedom ("libre")). I also like talking and reading about Privacy in the digital world. I try to use free and open source software as much as possible and encourage people around me to do so. I also write articles about my understanding of this software world. <br><br>Check out my blog <span class="w3-xlarge"><a href="https://readbit.blogspot.com/">here</a></span>
-        </div>
+
         <br>
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fa fa-github fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+
+          <h4 class="w3-large w3-text-teal w3-container">Software I've built</h4>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">1. My-Cloud-IDE</h4>
+            <p class="w3-text-grey">
+              My-Cloud-IDE is a Software-as-a-Service (SaaS) built using Docker. It offers an IDE for PHP Web
+              Development. Multiple
+              users can login and start development and each user will be provided with an isolated environment. When a
+              user logs in,
+              a new Docker container is spawned and is dedicated to that particular user. <a
+                href="https://github.com/NandanDesai/My-Cloud-IDE" target="_blank" class="w3-text-teal">Here</a> for
+              more. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img
+                  src="https://1.bp.blogspot.com/-kKONj_f8k0M/Xf2_wZxZbhI/AAAAAAAAAR4/HXnSop_eHBcv92X1gf5fM7lClebswwPXgCLcBGAsYHQ/s640/Screenshot%2Bat%2B2019-12-20%2B15-01-23.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-Rmkl1xMSrAA/Xf2_we5S-HI/AAAAAAAAAR0/dHdh62AvD5MkFdV7tQJHatKrsSPcf83IACLcBGAsYHQ/s640/Screenshot%2Bat%2B2019-12-20%2B15-02-14.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-jA0IsEBB1Dk/Xf2_wMX3rkI/AAAAAAAAARw/pCrWOvE_zqsYuL3VYjVtlKluP0vIlIKzgCLcBGAsYHQ/s640/Screenshot%2Bat%2B2019-12-20%2B15-02-57.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-cPvqLAyREsM/Xf2_xYWJcKI/AAAAAAAAAR8/dAhE-qbket4z5XXUipPqATUhqOIDp8kbgCLcBGAsYHQ/s640/Screenshot%2Bat%2B2019-12-20%2B15-03-57.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/--zPF77YQ11M/Xf2_xsWd0LI/AAAAAAAAASA/6qy0ZDGR-xsSAkjS317wtynnxdy5vCvyACLcBGAsYHQ/s640/Screenshot%2Bat%2B2019-12-20%2B15-04-10.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. jWebProfile</h4>
+            <p class="w3-text-grey">
+              jWebProfile is the first software I've ever built back in July 2017. It's a desktop app built using Java
+              Swing. This app lets the user to collect information related to people from social media accounts.
+              Currently, jWebProfile
+              facilitates it's users to collect information from Twitter and Github. It has features like exporting the
+              tweets, web scraping articles, blogs etc. to fetch more information and perform analysis. <a
+                href="https://github.com/NandanDesai/jWebProfile" target="_blank" class="w3-text-teal">Here</a> for
+              more. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img
+                  src="https://1.bp.blogspot.com/-3V_hJANdA8M/WnIClMx16fI/AAAAAAAAAHc/2TIN13EYqvY4wYCtvwoLMPIkMjYMWlliwCLcBGAs/s640/1.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-6RPG1DDfLTc/WnICqKZle9I/AAAAAAAAAH8/q69HVFuCLms-u-t_Ljx_QK8Vxr-0cP3xwCLcBGAs/s640/2.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://4.bp.blogspot.com/-nAXkZTiAxbw/WnICqbU67MI/AAAAAAAAAIA/4q5CjHQit3oqyqWjLoLbG3lftC8BwIRzQCLcBGAs/s640/4.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-SDFxeHQbaaM/WnICq8no1ZI/AAAAAAAAAIE/0BRP13UaKeEoNCLoQ0-6BsjPMn9b9DhcQCLcBGAs/s640/5.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-enQW0AWfkzs/WnICrF0o1II/AAAAAAAAAII/ThA6Q_mjaKEWklbkMFGA2LkJ0wkQrBYCwCLcBGAs/s640/6.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-zJ0dO7YE7zM/WnICrQ8d9TI/AAAAAAAAAIM/jbj_Fs-RzMkyYTPNscSXWZOikEBpsA8owCLcBGAs/s640/7.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-FDu4gjJlXiU/WnICsLE56UI/AAAAAAAAAIQ/eH2vVGb-iI4kuMJ4SzulJD9mKgSH8QHEQCLcBGAs/s640/8.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-3_Cv4COx6RQ/WnICs6WYhBI/AAAAAAAAAIU/2ZKkbLcn4WwT9jLrT__ZkZ6zOSATqprNACLcBGAs/s640/9.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-Zcq_UlOzLpc/WnIClKh3IDI/AAAAAAAAAHg/F1lMBReOq-cUpe6Elfg_63b05iUfI5jfACLcBGAs/s640/10.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://2.bp.blogspot.com/-seqmbq-imJM/WnIClqj-nGI/AAAAAAAAAHk/Zwp1jcKGI_8AkZcy7EJpWZ_xBjmDaoKPACLcBGAs/s640/11.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-SSYj8Hn8-aM/WnICmqlDpII/AAAAAAAAAHo/Iyb7MKVaW_g7BQ88iQbG1l9b4NrveCjxwCLcBGAs/s640/12.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://4.bp.blogspot.com/-TCCUNAyrvi4/WnICoF7y34I/AAAAAAAAAHw/w8RmBTd8MRAzFzVAqpWpsx-JPtXJfGdpwCLcBGAs/s640/14.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://3.bp.blogspot.com/-EyGNvvckfIo/WnICosc8OrI/AAAAAAAAAH0/wfih-HLnFOIqlWNISf8yt7beaYBPCnkDwCLcBGAs/s640/15.png">
+              </div>&nbsp;&nbsp;
+              <div><img
+                  src="https://1.bp.blogspot.com/-1T_-zNvZzdY/WnICpoTkknI/AAAAAAAAAH4/rnR7AKiXWJoroE5KTj6yA1oXuwj6tZPsgCLcBGAs/s640/16.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+          <br><br>
+          <h4 class="w3-large w3-text-teal w3-container">Android apps that I've built</h4>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">1. TV Torrent Search</h4>
+            <p class="w3-text-grey">
+              I built this app for fun. It scrapes various torrent sites and fetches torrent files for TV Shows. This
+              app only scrapes for torrent files and doesn't download or upload copyrighted material so it doesn't
+              violate any laws or T&Cs :) You will need other torrent downloading apps to actually download the
+              material. <a href="https://play.google.com/store/apps/details?id=com.tvtorrentsearch" target="_blank"
+                class="w3-text-teal">Available on Google Play Store</a>. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img src="./res/tv-torrent-search-01.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/tv-torrent-search-02.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/tv-torrent-search-03.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. Data Monitr</h4>
+            <p class="w3-text-grey">
+              I built this app when I was running Android Nougat. This app shows the data usage of each app, data used
+              on Mobile/Wifi connection, live internet speed in notifications etc. <a
+                href="https://play.google.com/store/apps/details?id=io.github.datamonitr" target="_blank"
+                class="w3-text-teal">Available on Google Play Store</a>. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img src="./res/data-monitr-01.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/data-monitr-02.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">3. VIGIL</h4>
+            <p class="w3-text-grey">
+              I built this app in June 2018 as part of an internship project for South Western Railways, Govt of India.
+              I also wrote the backend for this app in PHP. <a
+                href="https://play.google.com/store/apps/details?id=com.blogspot.readbit.swrvigilance" target="_blank"
+                class="w3-text-teal">Available on Google Play Store</a>.
+            </p>
+            <div class="horizontal-slider">
+              <div><img src="./res/vigil-01.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/vigil-02.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/vigil-03.png">
+              </div>&nbsp;&nbsp;
+              <div><img src="./res/vigil-04.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+          <br><br>
+          <h4 class="w3-large w3-text-teal w3-container">Software libraries that I've written</h4>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">1. TwitterScraper4J</h4>
+            <p class="w3-text-grey">
+              This is a Java library which lets you fetch Twitter public data without the need to use any API. <a
+                href="https://github.com/NandanDesai/TwitterScraper4J" target="_blank" class="w3-text-teal">Here</a> for
+              more.
+            </p>
+          </div>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. SocialInfo4J</h4>
+            <p class="w3-text-grey">
+              This repository contains a collection of Java libraries which can be used to fetch data from popular
+              social networks
+              like Facebook, Instagram and LinkedIn. Might become useful in building Information Gathering tools, OSINT
+              etc. <a href="https://github.com/NandanDesai/SocialInfo4J" target="_blank" class="w3-text-teal">Here</a>
+              for
+              more.
+            </p>
+          </div>
+          <br><br>
+          <h4 class="w3-large w3-text-teal w3-container">Writeups & Guides that I've written</h4>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">1. AndroidIMTemplate</h4>
+            <p class="w3-text-grey">
+              A brief guide on building a secure instant messaging app for Android. Covers topics like App architecture
+              design, Security requirements like End-to-End Encryption, Database encryption etc. <a
+                href="https://github.com/NandanDesai/AndroidIMTemplate" target="_blank" class="w3-text-teal">Here</a>
+              for
+              more.
+            </p>
+          </div>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. Stackoverflow answers</h4>
+            <p class="w3-text-grey">
+              I'm not too active on Stackoverflow but I've written quite a few answers on it. <a
+                href="https://stackoverflow.com/users/7090731/nandan-desai" target="_blank"
+                class="w3-text-teal">Here</a>
+              for
+              more.
+            </p>
+          </div>
+          <br><br>
+        </div>
+
+        <!-- End Right Column -->
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge w3-text-grey"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>South Western Railways</b></h5>
-          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2017 - Jun 2018</h6>
-          <p>Successfully completed two projects for Hubli Division and Vigilance department at South Western Railways, Government Of India.</p>
-          <hr>
-        </div>
-        
-      </div>
-      <br>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-github fa-fw w3-margin-right w3-xxlarge w3-text-grey"></i>Projects & Contributions</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"></h5>
-          <h6 class="w3-text-grey"><i class="fa fa-tag fa-fw w3-margin-right"></i><a href="https://github.com/NandanDesai" target="_blank">My Github profile</a></h6>
-          <p></p>
-          <hr>
-        </div>
-
-        <div class="w3-container">
-          <h5 class="w3-opacity"></h5>
-          <h6 class="w3-text-grey"><i class="fa fa-tag fa-fw w3-margin-right"></i><a href="https://stackoverflow.com/users/7090731/nandan-desai" target="_blank">My Stackoverflow profile</a></h6>
-          <p></p>
-          <hr>
-        </div>
-        
-      </div>
-
-    <!-- End Right Column -->
+      <!-- End Grid -->
     </div>
-    
-  <!-- End Grid -->
+
+    <!-- End Page Container -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
 
-<footer class="w3-container w3-grey w3-center w3-margin-top">
-  <a href="https://twitter.com/nandankdesai" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://github.com/NandanDesai" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-   Copyright Nandan Desai 2019-2020
-</footer>
-
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <br>
+    <a href="https://twitter.com/nandankdesai" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://github.com/NandanDesai" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+    Copyright Nandan Desai 2020-2021
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.horizontal-slider').slick({
+        infinite: false,
+        variableWidth: true
+      });
+    });
+  </script>
 </body>
-</html>
 
+</html>
