@@ -6,8 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"
-  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 <style>
@@ -80,19 +79,23 @@
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="./res/my-photo.png" style="width:100%" alt="Avatar">
-            <div class="w3-display-bottomleft w3-container w3-text">
+            <div class="w3-container w3-text-black">
               <h2>Nandan Desai</h2>
             </div>
           </div>
           <div class="w3-container">
             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-grey"></i>India</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i>nkdesai409@gmail.com</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i><b class="w3-text-teal">nkdesai409@gmail.com</b></p>
             <hr>
+            
+            <p class="w3-xlarge">My Technical Skillsets</p>
 
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming
                 Languages</b></p>
 
             <p><span class="w3-xxlarge"><i class="devicon-java-plain colored"></i></span>&nbsp;&nbsp;Java</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-python-plain colored"></i></span>&nbsp;&nbsp;Python</p>
 
             <p><span class="w3-xxlarge"><i class="devicon-c-plain colored"></i></span>&nbsp;&nbsp;C</p>
 
@@ -100,6 +103,8 @@
 
             <p><span class="w3-xxlarge"><i class="devicon-javascript-plain colored"></i></span>&nbsp;&nbsp;JavaScript
             </p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-typescript-plain colored"></i></span>&nbsp;&nbsp;TypeScript</p>
 
             <br>
             <hr>
@@ -111,10 +116,16 @@
 
             <p><span class="w3-xxlarge"><i class="devicon-docker-plain colored"></i></span>&nbsp;&nbsp;Docker</p>
 
-            <p><span class="w3-xxlarge"><i class="devicon-linux-plain colored"></i></span>&nbsp;&nbsp;Linux</p>
-            <div class="w3-small">
-              I use Debian as my primary operating system.
-            </div>
+            <p><span class="w3-xxlarge"><i class="devicon-kubernetes-plain colored"></i></span>&nbsp;&nbsp;Kubernetes</p>
+
+            <p><span class="w3-xxlarge"><img src="./res/logo-elasticsearch-32-color.svg"></span>&nbsp;&nbsp;Elastic Stack (for Monitoring & Analysis)</p>
+
+            <p><span class="w3-xxlarge"><i class="devicon-linux-plain colored"></i></span>&nbsp;&nbsp;Linux<br>
+              <span class="w3-small">
+                I use Debian as my primary operating system.
+              </span>
+            </p>
+            
             <br>
           </div>
 
@@ -145,7 +156,41 @@
           <h2 class="w3-text-grey w3-padding-16"><i
               class="fa fa-github fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
 
-          <h4 class="w3-large w3-text-teal w3-container">Software I've built</h4>
+
+          <h4 class="w3-xlarge w3-text-teal w3-container">Upcoming Projects</h4>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">1. BookShelf</h4>
+            <p class="w3-text-grey">
+              BookShelf is a sample use case that I created to showcase some of the concepts in Security and Cloud. It is a web
+              application with frontend built in Angular 10 and the backend server is built using Spring Boot. The project uses Spring Security,
+              JWT authentication, reCAPTCHA v2, comprehensive validation including that for file uploads (scans the uploaded file binary to determine file format) etc.
+              The project is also aimed to be educational. I've planned to make the documentation as detailed as possible along with publishing explainer videos on YouTube.
+              <br><b>Expected final release of this project: November 2021.</b> 
+              <a href="https://github.com/NandanDesai/BookShelf" target="_blank" class="w3-text-teal">Here</a> for
+              more.
+            </p>
+            <img src="https://raw.githubusercontent.com/NandanDesai/res/master/bookshelf-base-working.gif">
+          </div>
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. My Investment Portfolio</h4>
+            <p class="w3-text-grey">
+              An investment simulator app that uses real-time market data. This app will be specific to Indian markets.
+              <br><b>Expected final release of this app: February 2022.</b> 
+            </p>
+            <img height="500" src="./res/my-investment-portfolio.png">
+          </div>
+          <br><br>
+          <!-- <div class="w3-container">
+            <h4 class="w3-text-grey">3. DeviceMonitr</h4>
+            <p class="w3-text-grey">
+              Revamping my existing app called DataMonitr and adding new features.
+              <br><b>Expected final release of this app: March 2022.</b> 
+            </p>
+            <img height="500" src="./res/device-monitr.png">
+          </div>
+          <br><br> -->
+          <h4 class="w3-xlarge w3-text-teal w3-container">Software I've built</h4>
           <div class="w3-container">
             <h4 class="w3-text-grey">1. My-Cloud-IDE</h4>
             <p class="w3-text-grey">
@@ -179,7 +224,7 @@
           <div class="w3-container">
             <h4 class="w3-text-grey">2. jWebProfile</h4>
             <p class="w3-text-grey">
-              jWebProfile is the first software I've ever built back in July 2017. It's a desktop app built using Java
+              jWebProfile is the first software I built back in July 2017. It's a desktop app built using Java
               Swing. This app lets the user to collect information related to people from social media accounts.
               Currently, jWebProfile
               facilitates it's users to collect information from Twitter and Github. It has features like exporting the
@@ -233,7 +278,7 @@
             </div>
           </div>
           <br><br>
-          <h4 class="w3-large w3-text-teal w3-container">Android apps that I've built</h4>
+          <h4 class="w3-xlarge w3-text-teal w3-container">Android apps I've built</h4>
           <!--<div class="w3-container">
             <h4 class="w3-text-grey">1. TV Torrent Search</h4>
             <p class="w3-text-grey">
@@ -254,7 +299,51 @@
           </div>
           <br><br>-->
           <div class="w3-container">
-            <h4 class="w3-text-grey">2. Data Monitr</h4>
+            <h4 class="w3-text-grey">1. PrivacyBreacher</h4>
+            <p class="w3-text-grey">
+              An app built to showcase the privacy issues in Android operating system.  <a
+              href="https://github.com/databurn-in/PrivacyBreacher" target="_blank"
+              class="w3-text-teal">Here for more</a>. <a
+                href="https://play.google.com/store/apps/details?id=io.nandandesai.privacybreacher" target="_blank"
+                class="w3-text-teal">Available on Google Play Store</a>. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img height="500" src="https://raw.githubusercontent.com/NandanDesai/res/master/privacybreacher-1.jpeg">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="https://raw.githubusercontent.com/NandanDesai/res/master/privacybreacher-2.jpeg">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="https://raw.githubusercontent.com/NandanDesai/res/master/privacybreacher-3.jpeg">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="https://raw.githubusercontent.com/NandanDesai/res/master/privacybreacher-5.jpeg">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">2. PeerLink</h4>
+            <p class="w3-text-grey">
+              A privacy-focused Instant messaging app built on top of Tor Hidden Services.  <a
+              href="https://github.com/databurn-in/PeerLink" target="_blank"
+              class="w3-text-teal">Here for more</a>. Screenshots below:
+            </p>
+            <div class="horizontal-slider">
+              <div><img height="500" src="./res/peerlink-1.png">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="./res/peerlink-2.png">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="./res/peerlink-3.png">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="./res/peerlink-4.png">
+              </div>&nbsp;&nbsp;
+              <div><img height="500" src="./res/peerlink-5.png">
+              </div>&nbsp;&nbsp;
+            </div>
+          </div>
+            
+          <br><br>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">3. Data Monitr</h4>
             <p class="w3-text-grey">
               I built this app when I was running Android Nougat. This app shows the data usage of each app, data used
               on Mobile/Wifi connection, live internet speed in notifications etc. <a
@@ -267,10 +356,9 @@
               <div><img src="./res/data-monitr-02.png">
               </div>&nbsp;&nbsp;
             </div>
-          </div>
           <br><br>
           <div class="w3-container">
-            <h4 class="w3-text-grey">3. VIGIL</h4>
+            <h4 class="w3-text-grey">4. VIGIL</h4>
             <p class="w3-text-grey">
               I built this app in June 2018 as part of an internship project for South Western Railways, Govt of India.
               I also wrote the backend for this app in PHP. <a
@@ -289,7 +377,7 @@
             </div>
           </div>
           <br><br>
-          <h4 class="w3-large w3-text-teal w3-container">Software libraries that I've written</h4>
+          <h4 class="w3-xlarge w3-text-teal w3-container">Software libraries I've written</h4>
           <div class="w3-container">
             <h4 class="w3-text-grey">1. TwitterScraper4J</h4>
             <p class="w3-text-grey">
@@ -310,7 +398,7 @@
             </p>
           </div>
           <br><br>
-          <h4 class="w3-large w3-text-teal w3-container">Writeups & Guides that I've written</h4>
+          <h4 class="w3-xlarge w3-text-teal w3-container">Writeups & Guides I've written</h4>
           <div class="w3-container">
             <h4 class="w3-text-grey">1. AndroidIMTemplate</h4>
             <p class="w3-text-grey">
@@ -322,7 +410,16 @@
             </p>
           </div>
           <div class="w3-container">
-            <h4 class="w3-text-grey">2. Stackoverflow answers</h4>
+            <h4 class="w3-text-grey">2. Android-Privacy-Issues</h4>
+            <p class="w3-text-grey">
+              A detailed writeup describing various privacy issues in Android. <a
+                href="https://github.com/databurn-in/Android-Privacy-Issues" target="_blank" class="w3-text-teal">Here</a>
+              for
+              more.
+            </p>
+          </div>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">3. Stackoverflow answers</h4>
             <p class="w3-text-grey">
               I'm not too active on Stackoverflow but I've written quite a few answers on it. <a
                 href="https://stackoverflow.com/users/7090731/nandan-desai" target="_blank"
@@ -332,25 +429,29 @@
             </p>
           </div>
           <br><br>
-          <h4 class="w3-large w3-text-teal w3-container">Contributions to other projects</h4>
+          <h4 class="w3-xlarge w3-text-teal w3-container">My contributions to other projects</h4>
           <div class="w3-container">
-            <h4 class="w3-text-grey">1. cloudflare-scrape-Android</h4>
+            <h4 class="w3-text-grey">1. <a href="https://github.com/zhkrb/cloudflare-scrape-Android" target="_blank">cloudflare-scrape-Android</a></h4>
             <p class="w3-text-grey">
               Helped to reduce the library size of this repo. <a
-                href="https://github.com/zhkrb/cloudflare-scrape-Android/tree/master#other-branch" target="_blank"
-                class="w3-text-teal">Here</a>
-              for
-              more.
+                href="https://github.com/zhkrb/cloudflare-scrape-Android/pull/5" target="_blank"
+                class="w3-text-teal">Here is my accepted pull request.</a>
             </p>
           </div>
           <div class="w3-container">
-            <h4 class="w3-text-grey">2. Tor-Onion-Proxy-Library</h4>
+            <h4 class="w3-text-grey">2. <a href="https://github.com/jehy/Tor-Onion-Proxy-Library" target="_blank">Tor-Onion-Proxy-Library</a></h4>
             <p class="w3-text-grey">
               Added relavant details in the README and also added a sample app on how to use that library. <a
-                href="https://github.com/jehy/Tor-Onion-Proxy-Library/graphs/contributors" target="_blank"
-                class="w3-text-teal">Here</a>
-              for
-              more.
+                href="https://github.com/jehy/Tor-Onion-Proxy-Library/pull/3" target="_blank"
+                class="w3-text-teal">Here is my accepted pull request.</a>
+            </p>
+          </div>
+          <div class="w3-container">
+            <h4 class="w3-text-grey">3. <a href="https://github.com/SusmithKrishnan/torghost" target="_blank">torghost</a></h4>
+            <p class="w3-text-grey">
+              Fixed a few privacy issues in this project. <a
+                href="https://github.com/SusmithKrishnan/torghost/pull/75" target="_blank"
+                class="w3-text-teal">Here is my accepted pull request.</a>
             </p>
           </div>
           <br><br>
